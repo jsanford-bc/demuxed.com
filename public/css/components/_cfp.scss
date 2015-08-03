@@ -1,0 +1,33 @@
+h3 i { color: $green; }
+
+.container.cfp {
+  border-left: 4px solid $green;
+  border-right: 4px solid $green;
+  background-color: $blue;
+
+  .section-icon {
+    color: $green;
+    text-align: center;
+    height: 100%;
+  }
+
+  .section-content {
+    border-left: 4px solid $green;
+    background-color: #fff;
+
+    @media (max-width: $screen-xs-max) {
+      padding: 10px 0;
+    }
+  }
+
+  // Try this again?
+  // .row:last-child {
+  //   .section-icon { border-bottom: 2px solid $green; }
+  // }
+}
+
+.submit-action {
+  @extend .container;
+
+  padding: 20px 0;
+}
