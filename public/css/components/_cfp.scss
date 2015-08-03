@@ -1,6 +1,5 @@
-h3 i { color: $green; }
-
 .container.cfp {
+  border-bottom: 4px solid $green;
   border-left: 4px solid $green;
   border-right: 4px solid $green;
   background-color: $blue;
@@ -10,14 +9,16 @@ h3 i { color: $green; }
     text-align: center;
     height: 100%;
 
-    h1 { margin: 10px 0; }
+    @media (max-width: $screen-md-max) {
+      h1 { margin: 10px 0; }
+    }
   }
 
   .section-content {
     border-left: 4px solid $green;
     background-color: #fff;
 
-    @media (max-width: $screen-xs-max) {
+    @media (max-width: $screen-md-max) {
       padding: 10px;
       border: none;
     }

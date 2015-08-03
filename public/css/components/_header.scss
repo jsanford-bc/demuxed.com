@@ -2,3 +2,10 @@ header {
   margin-top: 40px;
   text-align: center;
 }
+
+h1.title {
+  text-align: center;
+  border-bottom: 4px solid $green;
+  margin-bottom: 0;
+  padding-bottom: 20px;
+}
