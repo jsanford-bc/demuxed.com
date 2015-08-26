@@ -1,0 +1,58 @@
+.register {
+  background-color: $blue;
+  padding: 2em;
+  color: #fff;
+}
+
+.register a {
+  color: $green;
+}
+
+.register h1 {
+  margin: 0;
+}
+
+.register h2 {
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+.register h2 .btn {
+  vertical-align: top;
+  font-size: 1em;
+  padding: 0.3em;
+  line-height: 1.17em;
+  border-radius: 0;
+  color: $blue;
+
+  @include transition(all ease-out 0.5s);
+
+  &:hover {
+    background-color: lighten($green, 20%);
+  }
+}
+
+
+.item-group {
+  border: 1px solid $green;
+  padding: 0.3em 0.3em 0.3em 0;
+
+  i {
+    padding: 0.4em 0.3em;
+    color: $blue;
+    background-color: $green;
+    border-right: 1px solid $green;
+
+    @include transition(background-color ease-out 0.5s);
+  }
+
+  &:hover {
+    i {
+      background-color: lighten($green, 20%);
+    }
+  }
+}
+
+.page-header {
+  border-color: $green;
+}
