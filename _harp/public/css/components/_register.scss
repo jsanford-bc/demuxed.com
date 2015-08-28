@@ -13,12 +13,12 @@
 }
 
 .register h2 {
+  font-size: 25px;
   margin-top: 1.5em;
   margin-bottom: 1.5em;
 }
 
 .register h2 .btn {
-  vertical-align: top;
   font-size: 1em;
   padding: 0.3em;
   line-height: 1.17em;
@@ -34,6 +34,7 @@
 
 
 .item-group {
+  vertical-align: middle;
   border: 1px solid $green;
   padding: 0.3em 0.3em 0.3em 0;
 
