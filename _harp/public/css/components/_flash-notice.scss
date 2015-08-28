@@ -1,0 +1,12 @@
+.flash-notice {
+  text-align: center;
+  background-color: $green;
+  color: $blue;
+  font-size: 1.2em;
+  padding: 0.6em;
+}
+
+.flash-notice a {
+  color: $blue;
+  text-decoration: underline;
+}

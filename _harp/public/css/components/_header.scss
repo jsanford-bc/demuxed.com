@@ -1,6 +1,13 @@
+body {
+  border-top: 4px solid $red;
+}
+
 header {
   margin-top: 40px;
   text-align: center;
+  border-bottom: 4px solid $green;
+  margin-bottom: 0;
+  padding-bottom: 20px;
 }
 
 h1.title {
@@ -8,4 +15,8 @@ h1.title {
   border-bottom: 4px solid $green;
   margin-bottom: 0;
   padding-bottom: 20px;
+}
+
+header .logo {
+  max-width: 100%;
 }
