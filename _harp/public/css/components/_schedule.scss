@@ -1,0 +1,15 @@
+.list-header {
+  display: block;
+  margin-bottom: 0.5em;
+  border-bottom: 1px solid $blue;
+  width: 100%;
+}
+
+.list-group-item.break {
+  background-color: $green;
+  color: $blue;
+
+  &:hover {
+    background-color: lighten($green, 10%);
+  }
+}
