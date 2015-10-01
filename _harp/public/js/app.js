@@ -20,9 +20,12 @@ function parseQueryParams(params) {
 }
 
 function checkLiveStream(d) {
-  // show the banner
-  var liveBannerEl = d.getElementsByClassName('live')[0];
-  liveBannerEl.classList.remove('hidden');
+  // only show it if after 8:30am on 10/1 PST (of if asked)
+  if (Date.now() >= 1443714300000 || window.location.hash === "#live") {
+    // show the banner
+    var liveBannerEl = d.getElementsByClassName('live')[0];
+    liveBannerEl.classList.remove('hidden');
+  }
 }
 
 (function(w, d) {
