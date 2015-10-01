@@ -19,6 +19,15 @@ function parseQueryParams(params) {
   return paramsObj;
 }
 
+function checkLiveStream(d) {
+  // only show it if after 8:30am on 10/1 PST (of if asked)
+  if (Date.now() >= 1443714300000 || window.location.hash === "#live") {
+    // show the banner
+    var liveBannerEl = d.getElementsByClassName('live')[0];
+    liveBannerEl.classList.remove('hidden');
+  }
+}
+
 (function(w, d) {
   var queryParams = parseQueryParams(window.location.search);
 
@@ -30,4 +39,8 @@ function parseQueryParams(params) {
     flashNotice.innerText = "You're in the right place, VidTechCon is now Demuxed!";
     d.body.insertBefore(flashNotice, headerEl);
   }
+
+  // Only show the live banner conditionally not on the live page
+  if (window.location.pathname !== '/live.html') 
+    checkLiveStream(d);
 })(window, document);
