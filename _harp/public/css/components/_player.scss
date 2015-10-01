@@ -1,0 +1,44 @@
+.player {
+  display: block;
+  position: relative;
+}
+
+.player:after {
+  padding-top: 56.25%;
+  display: block;
+}
+
+.player .video-js {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: auto;
+  height: auto;
+}
+
+.player .video-js .vjs-big-play-button {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+}
+
+.player .vjs-live-status-live .vjs-seek-handle.vjs-slider-handle {
+    left: 99% !important;
+}
+
+.player .vjs-play-progress {
+  background-color: $green;
+}
+
+.player .vjs-live-status-live .vjs-play-progress {
+  width: 100% !important;
+}
+
+.player .vjs-live-status-live .vjs-live-display.vjs-live-display.vjs-live-display {
+  background: $green;
+}
